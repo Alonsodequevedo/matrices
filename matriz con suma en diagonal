@@ -5,7 +5,7 @@
 int main()
 {
 	
-	int n,i,j,suma;
+	int n,i,j,suma=0;
 	srand(time(NULL));
 	printf("ingrese la longitud de la matriz: \n");
 	scanf("%d", &n);
