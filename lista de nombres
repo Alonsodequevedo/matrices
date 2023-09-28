@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+int main() {
+ 
+
+    char nombres[10][10] = {
+        "Woody","Bus","Andy","jessie","Rex","Obi wan Kenobi","Anakin","Darth Vader","Yoda","Mace windu",
+       
+    };
+
+    int n;
+    
+    printf("Que nombre desea que se imprima del 1 al 10 ");
+    scanf("%d", &n);
+
+    if (n >= 1 && n <= 10) 
+	{
+        printf("Nombre seleccionado: %s\n", nombres[n - 1]);
+    } 
+
+    return 0;
+}
