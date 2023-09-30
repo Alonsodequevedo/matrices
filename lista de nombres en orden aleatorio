@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int main() {
+ 
+
+    char nombres[10][50] = {
+        "Woody","Bus","Andy","jessie","Rex","Obi wan Kenobi","Anakin","Darth Vader","Yoda","Mace windu",
+       
+    };
+
+	srand(time(NULL));
+    int indices_usados[10]={0};
+    int i;
+    
+    for(i=0; i<10; i++){
+    	int indiceAleatorio;
+    	do
+    	{
+    		indiceAleatorio=rand()%10;
+    	}while(indices_usados[indiceAleatorio]);
+    	indices_usados[indiceAleatorio]=1;
+    	printf("nombre %d: %s \n", i+1, nombres[indiceAleatorio]);
+    
+    }
+
+    return 0;
+}
