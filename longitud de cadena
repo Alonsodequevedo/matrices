@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    char texto[100]; 
+    int longitud = 0;
+
+    printf("Introduce una cadena de texto: ");
+    scanf("%s", texto);
+
+
+    while (texto[longitud] != '\0') {
+        longitud++;
+        printf("Caracter %d: %c\n", longitud, texto[longitud - 1]);
+    }
+
+    printf("La cadena tiene %d caracteres.\n", longitud);
+
+    return 0;
+}
+
